@@ -1,6 +1,6 @@
 # Gifs-web-appication
 
-this web application Build in reactjs get gifs from giphy api, also includes a dark mode.
+this web application Build in React js gets gifs from giphy api, also includes a dark mode.
 
 ### This project use the followig tecnologies
 
