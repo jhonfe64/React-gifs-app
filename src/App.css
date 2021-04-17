@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*=======================================================
+HEADER
+======================================================== */
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+
+/*=======================================================
+SEARCHING
+======================================================== */
+
+.topSearching {
+  width: 390px;
+}
+
+.searching h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #572EE5;
+}
+
+.searching h2 {
+  color: #572EE5;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.searching .container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 50px;
+}
+
+.img-container img {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.searching .searchin-bar{
+  display: flex;
+}
+
+.searching .searchin-bar input {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border-right: none;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid #bdc3c7;
+}
+
+.searching .searchin-bar input:focus, button:focus {
+  outline: 0;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.btnContainer  button {
+  cursor: pointer;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid #6809E1;
+  padding: 7px 30px;
+  color:#6809E1;
+  font-weight: 600;
+}
+
+.searching .searchin-bar button {
+  cursor: pointer;
+  background-color: #572EE5;
+  border: 1px solid #bdc3c7;
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.searching .searchin-bar button img {
+  width: 95%;
+}
+
+.suggestions {
+  border: 1px solid #bdc3c7;
+  border-radius: 20px;
+  overflow: hidden;
+  border-top: none;
+}
+
+.suggestions li {
+  border-bottom: 1px solid #bdc3c7;
+  cursor: pointer;
+}
+
+.suggestions li:last-child{
+  border-bottom: none;
+}
+
+.suggestions li  div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.suggestions li div:hover {
+  background-color: #ecf0f1;
+}
+
+/*=======================================================
+RESULTS
+======================================================== */
+
+.results .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 30px;
+  background-color: #E7E7E7;
+}
+
+.results .container .imgContainer {
+  width: 30%;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.results .container .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.results .container h1 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+
+.spinner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner img {
+  width: 12%;
+}
+
+.noResults {
+  width: 100%;
+}
+
+
+.noResults h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.noResults img {
+  margin: auto;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+/*=======================================================
+DARRK MODE
+======================================================== */
+
+
+.darkMode {
+  background-color: #373737;
+}
+
+.darkMode .results .container {
+  background-color: #212121;
+}
+
+.darkMode .header button {
   color: white;
+  border: 1px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.darkMode .suggestions ul li {
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (max-width: 768px){
+  .results .container .imgContainer {
+    width: 45%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
+
+@media only screen and (max-width: 500px){
+  .results .container .imgContainer {
+    width: 100%;
+  }
+  
+}
+
