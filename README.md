@@ -15,3 +15,5 @@ this web application Build in React js gets gifs from giphy api, also includes a
 - git clone https://github.com/jhonfe64/React-gifs-app.git
 - type npm start to run the server 
 
+![](https://github.com/jhonfe64/React-gifs-app/blob/master/lightMode.jpg?raw=true)
+![](https://github.com/jhonfe64/React-gifs-app/blob/master/darkmode.jpg?raw=true)
