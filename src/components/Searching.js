@@ -81,6 +81,3 @@ const Searching = ({darkModeBtn}) => {
 }
 
 export default Searching;
-
-
-//Renderizado condiconal
