@@ -8,7 +8,7 @@ const [loader, setLoader] = useState(true);
 
 //Al cargar la pagina
     useEffect(() => {
-        fetch(`http://api.giphy.com/v1/gifs/trending?&api_key=x58Cq33OnTiwdQ7gRoG1bsCNVFJdEX1d&limit=21`)
+        fetch(`https://api.giphy.com/v1/gifs/trending?&api_key=x58Cq33OnTiwdQ7gRoG1bsCNVFJdEX1d&limit=21`)
         .then((res)=>{
             return res.json();
         })
@@ -23,7 +23,7 @@ const [loader, setLoader] = useState(true);
     const [searchingItem, setSearchingItem] = useState("");
 
         const fetching = () => {
-        fetch(`http://api.giphy.com/v1/gifs/search?q=${searchingItem}&api_key=x58Cq33OnTiwdQ7gRoG1bsCNVFJdEX1d&limit=21`)
+        fetch(`https://api.giphy.com/v1/gifs/search?q=${searchingItem}&api_key=x58Cq33OnTiwdQ7gRoG1bsCNVFJdEX1d&limit=21`)
         .then((res)=>{
             return res.json();
         }).then((gifList)=>{
