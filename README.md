@@ -4,7 +4,7 @@ this web application Built in React js gets gifs from giphy api, includes a dark
 
 ### This project use the followig tecnologies
 
-1. Raect.js
+1. React.js
 2. Fetch api
 
 
